@@ -17,12 +17,13 @@ flask-cors = "*"
 gunicorn = "*"
 cloudinary = "*"
 flask-admin = "*"
+flask-jwt-extended = "*"
 
 [requires]
 python_version = "3.8"
 
 [scripts]
-start="flask run -p 3001 -h 0.0.0.0"
+start="flask run -p 3002 -h 0.0.0.0"
 init="flask db init"
 migrate="flask db migrate"
 local="heroku local"
